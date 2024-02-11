@@ -30,14 +30,14 @@ const WeatherCondition = () => {
                 <li className="text-sm lg:text-lg flex items-center justify-between space-x-4">
                     <span>Temp max</span>
                     <div className="inline-flex space-x-4">
-                        <p>{Math.round(maxTemperature)}</p>
+                        <p>{Math.round(maxTemperature)}°</p>
                         <img src={tempMax} alt="temp-max" />
                     </div>
                 </li>
                 <li className="text-sm lg:text-lg flex items-center justify-between space-x-4">
                     <span>Temp min</span>
                     <div className="inline-flex space-x-4">
-                        <p>{Math.round(minTemperature)}</p>
+                        <p>{Math.round(minTemperature)}°</p>
                         <img src={tempMin} alt="temp-min" />
                     </div>
                 </li>
