@@ -1,21 +1,26 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import Board from './components/Header/WeatherBoard/Board';
-import { WeatherProvider } from './contextProvider';
+import { FavouriteProvider, LocationProvider, WeatherProvider } from './contextProvider';
 
 const App = () => {
   return (
+    <LocationProvider>
+      <WeatherProvider>
+        <FavouriteProvider>
 
-    <WeatherProvider>
-      <div className='grid place-items-center h-screen'>
-        <Header />
-        <main>
-          <section>
-            <Board />
-          </section>
-        </main>
-      </div>
-    </WeatherProvider>
+          <div className='grid place-items-center h-screen'>
+            <Header />
+            <main>
+              <section>
+                <Board />
+              </section>
+            </main>
+          </div>
+        </FavouriteProvider>
+
+      </WeatherProvider>
+    </LocationProvider>
   );
 };
 

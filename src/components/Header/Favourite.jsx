@@ -1,9 +1,11 @@
 import React from 'react';
 import heart from "../../assets/heart.svg"
 
-const Favourite = () => {
+const Favourite = ({ handleClick }) => {
     return (
-        <div className="p-2 hover:bg-black/30 cursor-pointer flex gap-2 items-center rounded-md transition-all">
+        <div
+            onClick={handleClick}
+            className="p-2 bg-black/5  hover:bg-black/30 cursor-pointer flex gap-2 items-center rounded-md transition-all">
             <img src={heart} alt="" />
             <span>Favourite Locations</span>
         </div>
