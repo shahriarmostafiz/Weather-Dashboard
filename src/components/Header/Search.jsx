@@ -31,7 +31,7 @@ const Search = () => {
                     className="bg-transparent  placeholder:text-white text-white w-full text-xs md:text-base outline-none border-none"
                     type="search"
                     placeholder="Search Location" required />
-                <button type="submit" className='hover:bg-stone-300 hover:bg-opacity-25 hover:rounded'>
+                <button className='hover:bg-stone-300 hover:bg-opacity-25 hover:rounded'>
                     <img src={searchImg} />
                 </button>
             </div>
