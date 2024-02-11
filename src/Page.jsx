@@ -48,7 +48,11 @@ const Page = () => {
     return (
         <>
             {
-                loading.state ? (<p>{loading.message}</p>) : (
+                loading.state ? (
+                    <div className='flex justify-center items-center p-6 bg-gray-300 rounded-md mt-20 mx-auto w-[500px]'>
+                        <p className='text-center'>{loading.message}</p>
+                    </div>
+                ) : (
                     <>
                         <div className='grid place-items-center h-screen bg-no-repeat bg-cover' style={{ backgroundImage: `url('${climateImage}')` }}>
                             <Header />

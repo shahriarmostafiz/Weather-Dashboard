@@ -7,7 +7,7 @@ const Favourite = ({ handleClick }) => {
             onClick={handleClick}
             className="p-2 bg-black/5  hover:bg-black/30 cursor-pointer flex gap-2 items-center rounded-md transition-all">
             <img src={heart} alt="" />
-            <span>Favourite Locations</span>
+            <span className='text-white '>Favourite Locations</span>
         </div>
     );
 };
