@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import Board from './components/Header/WeatherBoard/Board';
 import { FavouriteProvider, LocationProvider, WeatherProvider } from './contextProvider';
+import Page from './Page';
 
 const App = () => {
   return (
@@ -9,14 +10,7 @@ const App = () => {
       <WeatherProvider>
         <FavouriteProvider>
 
-          <div className='grid place-items-center h-screen'>
-            <Header />
-            <main>
-              <section>
-                <Board />
-              </section>
-            </main>
-          </div>
+          <Page />
         </FavouriteProvider>
 
       </WeatherProvider>
